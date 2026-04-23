@@ -514,8 +514,8 @@ importers:
         specifier: ^4.0.1
         version: 4.0.1
       '@types/chai-as-promised':
-        specifier: ^7.1.8
-        version: 7.1.8
+        specifier: ^8.0.2
+        version: 8.0.2
       '@types/express-serve-static-core':
         specifier: ^4.19.0
         version: 4.19.0
@@ -538,8 +538,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       chai-as-promised:
-        specifier: ^7.1.1
-        version: 7.1.1(chai@5.1.0)
+        specifier: ^8.0.2
+        version: 8.0.2(chai@5.1.0)
       commitlint:
         specifier: ^19.3.0
         version: 19.3.0(@types/node@20.12.7)(typescript@5.4.5)
@@ -2862,6 +2862,9 @@ packages:
 
   '@sinonjs/text-encoding@0.7.2':
     resolution: {integrity: sha512-sXXKG+uL9IrKqViTtao2Ws6dy0znu9sOaP1di/jKGW1M6VssO8vlpXCQcpZ+jisQ1tTFAC5Jo/EOzFbggBagFQ==}
+    deprecated: |-
+      Deprecated: no longer maintained and no longer used by Sinon packages. See
+        https://github.com/sinonjs/nise/issues/243 for replacement details.
 
   '@solana/buffer-layout-utils@0.2.0':
     resolution: {integrity: sha512-szG4sxgJGktbuZYDg2FfNmkMi0DYQoVjN2h7ta1W1hPrwzarcFLBq9UpX1UjNXsNpT9dn+chgprtWGioUAr4/g==}
@@ -3016,8 +3019,8 @@ packages:
     peerDependencies:
       '@swc/core': '*'
 
-  '@swc/types@0.1.25':
-    resolution: {integrity: sha512-iAoY/qRhNH8a/hBvm3zKj9qQ4oc2+3w1unPJa2XvTK3XjeLXtzcCingVPw/9e5mn1+0yPqxcBGp9Jf0pkfMb1g==}
+  '@swc/types@0.1.26':
+    resolution: {integrity: sha512-lyMwd7WGgG79RS7EERZV3T8wMdmPq3xwyg+1nmAM64kIhx5yl+juO2PYIHb7vTiPgPCj8LYjsNV2T5wiQHUEaw==}
 
   '@tootallnate/once@2.0.0':
     resolution: {integrity: sha512-XCuKFP5PS55gnMVu3dty8KPatLqUoy/ZYzDzAGCQ8JNFCkLXzmI7vNHCR+XpbZaMWQK/vQubr7PkYq8g470J/A==}
@@ -3056,11 +3059,14 @@ packages:
   '@types/bs58@4.0.1':
     resolution: {integrity: sha512-yfAgiWgVLjFCmRv8zAcOIHywYATEwiTVccTLnRp6UxTNavT55M9d/uhK3T03St/+8/z/wW+CRjGKUNmEqoHHCA==}
 
-  '@types/chai-as-promised@7.1.8':
-    resolution: {integrity: sha512-ThlRVIJhr69FLlh6IctTXFkmhtP3NpMZ2QGq69StYLyKZFp/HOp1VdKZj7RvfNWYYcJ1xlbLGLLWj1UvP5u/Gw==}
+  '@types/chai-as-promised@8.0.2':
+    resolution: {integrity: sha512-meQ1wDr1K5KRCSvG2lX7n7/5wf70BeptTKst0axGvnN6zqaVpRqegoIbugiAPSqOW9K9aL8gDVrm7a2LXOtn2Q==}
 
   '@types/chai@4.3.14':
     resolution: {integrity: sha512-Wj71sXE4Q4AkGdG9Tvq1u/fquNz9EdG4LIJMwVVII7ashjD/8cf8fyIfJAjRr6YcsXnSE8cOGQPq1gqeR8z+3w==}
+
+  '@types/chai@5.2.3':
+    resolution: {integrity: sha512-Mw558oeA9fFbv65/y4mHtXDs9bPnFMZAL/jxdPFUpOHHIXX91mcgEHbS5Lahr+pwZFR8A7GQleRWeI6cGFC2UA==}
 
   '@types/connect@3.4.35':
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
@@ -3070,6 +3076,9 @@ packages:
 
   '@types/cors@2.8.17':
     resolution: {integrity: sha512-8CGDvrBj1zgo2qE+oS3pOCyYNqCPryMWY2bGfwA0dcfopWGgxs+78df0Rs3rc9THP4JkOhLsAa+15VdpAqkcUA==}
+
+  '@types/deep-eql@4.0.2':
+    resolution: {integrity: sha512-c9h9dVVMigMPc4bwTvC5dxqtqJZwQPePsWjPlpSOnojbor6pGqdk541lfA7AqFQr5pB1BRdq0juY9db81BwyFw==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -3563,6 +3572,7 @@ packages:
   basic-ftp@5.0.5:
     resolution: {integrity: sha512-4Bcg1P8xhUuqcii/S0Z9wiHIrQVPMermM1any+MX5GeGD7faD3/msQUDGLol9wOcz4/jbg/WJnGqoJF6LiBdtg==}
     engines: {node: '>=10.0.0'}
+    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   before-after-hook@3.0.2:
     resolution: {integrity: sha512-Nik3Sc0ncrMK4UUdXQmAnRtzmNQTAAXmXIopizwZ1W1t8QmfJj+zL4OA2I7XPTPW5z5TDqv4hRo/JzouDJnX3A==}
@@ -3692,10 +3702,10 @@ packages:
   caniuse-lite@1.0.30001596:
     resolution: {integrity: sha512-zpkZ+kEr6We7w63ORkoJ2pOfBwBkY/bJrG/UZ90qNb45Isblu8wzDgevEOrRL1r9dWayHjYiiyCMEXPn4DweGQ==}
 
-  chai-as-promised@7.1.1:
-    resolution: {integrity: sha512-azL6xMoi+uxu6z4rhWQ1jbdUhOMhis2PvscD/xjLqNMkv3BPPp2JyyuTHOrf9BOosGpNQ11v6BKv/g57RXbiaA==}
+  chai-as-promised@8.0.2:
+    resolution: {integrity: sha512-1GadL+sEJVLzDjcawPM4kjfnL+p/9vrxiEUonowKOAzvVg0PixJUdtuDzdkDeQhK3zfOE76GqGkZIQ7/Adcrqw==}
     peerDependencies:
-      chai: '>= 2.1.2 < 5'
+      chai: '>= 2.1.2 < 7'
 
   chai@5.1.0:
     resolution: {integrity: sha512-kDZ7MZyM6Q1DhR9jy7dalKohXQ2yrlXkk59CR52aRKxJrobmlBNqnFQxX9xOX8w+4mz8SYlKJa/7D7ddltFXCw==}
@@ -3728,11 +3738,12 @@ packages:
   chardet@0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==}
 
-  check-error@1.0.2:
-    resolution: {integrity: sha512-BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv+34syEZtc6IhLtA==}
-
   check-error@2.0.0:
     resolution: {integrity: sha512-tjLAOBHKVxtPoHe/SA7kNOMvhCRdCJ3vETdeY0RuAc9popf+hyaSV6ZEg9hr4cpWF7jmo/JSWEnLDrnijS9Tog==}
+    engines: {node: '>= 16'}
+
+  check-error@2.1.3:
+    resolution: {integrity: sha512-PAJdDJusoxnwm1VwW07VWwUN1sl7smmC3OKggvndJFadxxDRyFJBX/ggnu/KE4kQAB7a3Dp8f/YXC1FlUprWmA==}
     engines: {node: '>= 16'}
 
   check-more-types@2.24.0:
@@ -4770,6 +4781,7 @@ packages:
   git-raw-commits@4.0.0:
     resolution: {integrity: sha512-ICsMM1Wk8xSGMowkOmPrzo2Fgmfo4bMHLNX6ytHjajRJUqvHOw/TFapQ+QG75c3X/tTDDhOSRPGC52dDbNM8FQ==}
     engines: {node: '>=16'}
+    deprecated: This package is no longer maintained. For the JavaScript API, please use @conventional-changelog/git-client instead.
     hasBin: true
 
   glob-parent@5.1.2:
@@ -9874,7 +9886,7 @@ snapshots:
   '@swc/core@1.3.93':
     dependencies:
       '@swc/counter': 0.1.3
-      '@swc/types': 0.1.25
+      '@swc/types': 0.1.26
     optionalDependencies:
       '@swc/core-darwin-arm64': 1.3.93
       '@swc/core-darwin-x64': 1.3.93
@@ -9896,7 +9908,7 @@ snapshots:
       '@swc/counter': 0.1.3
       jsonc-parser: 3.2.0
 
-  '@swc/types@0.1.25':
+  '@swc/types@0.1.26':
     dependencies:
       '@swc/counter': 0.1.3
 
@@ -9941,11 +9953,16 @@ snapshots:
     dependencies:
       base-x: 3.0.9
 
-  '@types/chai-as-promised@7.1.8':
+  '@types/chai-as-promised@8.0.2':
     dependencies:
-      '@types/chai': 4.3.14
+      '@types/chai': 5.2.3
 
   '@types/chai@4.3.14': {}
+
+  '@types/chai@5.2.3':
+    dependencies:
+      '@types/deep-eql': 4.0.2
+      assertion-error: 2.0.1
 
   '@types/connect@3.4.35':
     dependencies:
@@ -9958,6 +9975,8 @@ snapshots:
   '@types/cors@2.8.17':
     dependencies:
       '@types/node': 18.19.21
+
+  '@types/deep-eql@4.0.2': {}
 
   '@types/estree@1.0.5': {}
 
@@ -10694,10 +10713,10 @@ snapshots:
 
   caniuse-lite@1.0.30001596: {}
 
-  chai-as-promised@7.1.1(chai@5.1.0):
+  chai-as-promised@8.0.2(chai@5.1.0):
     dependencies:
       chai: 5.1.0
-      check-error: 1.0.2
+      check-error: 2.1.3
 
   chai@5.1.0:
     dependencies:
@@ -10731,9 +10750,9 @@ snapshots:
 
   chardet@0.7.0: {}
 
-  check-error@1.0.2: {}
-
   check-error@2.0.0: {}
+
+  check-error@2.1.3: {}
 
   check-more-types@2.24.0: {}
 
